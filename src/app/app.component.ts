@@ -1,7 +1,5 @@
-import { AfterViewInit, Component, OnInit, ViewEncapsulation } from '@angular/core';
-
-import { jqxExpanderComponent } from "jqwidgets-ng/jqxexpander";
-import { jqxTreeComponent } from 'jqwidgets-ng/jqxtree';
+import { AfterViewInit, Component, OnInit, ViewEncapsulation, ElementRef, ViewChild } from '@angular/core';
+import { jqxTabsComponent } from 'jqwidgets-ng/jqxtabs';
 
 @Component({
   selector: 'app-root',
@@ -10,37 +8,42 @@ import { jqxTreeComponent } from 'jqwidgets-ng/jqxtree';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements AfterViewInit, OnInit {
-  
-  treeSource: any[] =
-	 [
-		 {
-			 icon: "icon-calendar.png", label: "Mail", expanded: true,
-			 items:
-			 [
-				 { icon: "icon-calendar.png", label: "Calendar" },
-				 { icon: "icon-calendar.png", label: "Contacts", selected: true }
-			 ]
-		 },
-		 {
-			 icon: "icon-calendar.png", label: "Inbox", expanded: true,
-			 items:
-			 [
-				 { icon: "icon-calendar.png", label: "Admin" },
-				 { icon: "icon-calendar.png", label: "Corporate" },
-				 { icon: "icon-calendar.png", label: "Finance" },
-				 { icon: "icon-calendar.png", label: "Other" },
-			 ]
-		 },
-		 { icon: "icon-calendar.png", label: "Deleted Items" },
-		 { icon: "icon-calendar.png", label: "Notes" },
-		 { icon: "icon-calendar.png", label: "Settings" },
-		 { icon: "icon-calendar.png", label: "Favorites" }
-  ];
-
-   ngOnInit() {
-  }
-
-  ngAfterViewInit() {
 	
-  }
+	@ViewChild('classCodeTabs', { static: false }) classCodeTabs!: jqxTabsComponent;
+	@ViewChild('unorderedList', { static: false }) unorderedList: ElementRef;
+
+	private classCodeCount: number = 0;
+	private tabsSettings: jqwidgets.TabsOptions =
+	{
+		width: "90%",
+		height: 200,
+		position: "top",
+		animationType: "none",
+		selectionTracker: false
+	};
+
+   	ngOnInit() {
+
+	}
+
+	ngAfterViewInit(): void
+	{
+		this.classCodeTabs.createComponent(this.tabsSettings);
+	}
+
+	getWidth() : any {
+		if (document.body.offsetWidth < 500) {
+			return '90%';
+		}
+		
+		return 500;
+	}
+	
+	tabclick(event: any): void {
+		if (event.args.item == this.unorderedList.nativeElement.children.length - 1) {
+			this.classCodeTabs.addAt(event.args.item, 'Sample title ' + this.classCodeCount, 'Sample content number: ' + this.classCodeCount);
+			this.classCodeCount++;
+		}
+	};
 }
+

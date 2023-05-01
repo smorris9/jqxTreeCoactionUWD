@@ -1,0 +1,10 @@
+.psi-stickyBottom-container {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    background-color: $white;
+    z-index: 1000;
+    box-shadow: 0 -2px 8px 0 rgba(0, 29, 83, 0.25);
+}

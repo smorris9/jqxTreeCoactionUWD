@@ -1,44 +1,10 @@
 {
     "/api": {
-      "target": "http://localhost:8282",
+      "target": "http://localhost:8249",
+      "target-dev": "https://partners-dev.coactionspecialty.com",
+      "target-stg": "https://partnersapi-stg.coactionspecialty.com",
       "secure": false,
       "changeOrigin": true,
       "pathRewrite": {"^/api" : ""}
-    },
-    "/mock/accounts": {
-        "target": "http://localhost:3000/accounts",
-        "secure": false
-    },
-    "/mock/policies": {
-        "target": "http://localhost:3000/policies",
-        "secure": false
-    },
-    "/mock/claims": {
-        "target": "http://localhost:3000/claims",
-        "secure": false
-    },
-    "/mock/account": {
-        "target": "http://localhost:3000/account",
-        "secure": false
-    },
-    "/mock/user": {
-        "target": "http://localhost:3000/user",
-        "secure": false
-    },
-    "/mock/poll": {
-        "target": "http://localhost:3000/poll",
-        "secure": false
-    },
-    "/mock/push": {
-        "target": "http://localhost:3000/push",
-        "secure": false
-    },
-    "/mock/totp": {
-        "target": "http://localhost:3000/totp",
-        "secure": false
-    },
-    "/mock/policyEndorsements": {
-        "target": "http://localhost:3000/policyEndorsements",
-        "secure": false
     }
-}
+  }

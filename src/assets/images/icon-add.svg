@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>icon-add</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="coverage/button/add" transform="translate(-81.000000, -10.000000)" fill="#1465FF" fill-rule="nonzero">
+            <g transform="translate(40.000000, 0.000000)" id="add_circle-24px">
+                <g transform="translate(33.000000, 6.000000)">
+                    <path d="M16,4 C11.584,4 8,7.584 8,12 C8,16.416 11.584,20 16,20 C20.416,20 24,16.416 24,12 C24,7.584 20.416,4 16,4 Z M20,12.8 L16.8,12.8 L16.8,16 L15.2,16 L15.2,12.8 L12,12.8 L12,11.2 L15.2,11.2 L15.2,8 L16.8,8 L16.8,11.2 L20,11.2 L20,12.8 Z" id="icon-add"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

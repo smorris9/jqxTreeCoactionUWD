@@ -1,0 +1,141 @@
+.psi-stepper-navigation {
+    box-shadow: inset 0 -2px 0 $gray-lightest;
+
+    .nav-item {
+        padding-left: 10px;
+        margin-right: 20px;
+
+        .step {
+            display: inline-block;
+            border-radius: 50px;        
+            vertical-align: text-bottom;
+            text-align: center;
+            height: 24px;
+            width: 24px;
+            font-size: 0.75rem;
+    
+            &:before {
+                vertical-align: middle;
+                color: $gray-light;
+            }
+    
+            &.step1 {
+                &:before { content: '1'; }
+            }
+            &.step2 {
+                &:before { content: '2'; }
+            }
+            &.step3 {
+                &:before { content: '3'; }
+            }
+            &.step4 {
+                &:before { content: '4'; }
+            }
+        }
+    
+        a.nav-link {
+            display: inline-block;
+            padding: 1rem 1rem 1.5rem 0.50rem;
+            font-size: 1.25rem;
+            line-height: 1.2;
+            font-weight: normal;
+        }
+        &.disabled {
+            &:hover {
+                cursor: text;
+            }
+            a.nav-link { color: $gray-light; }
+            .step {
+                color: $gray-light;
+                background-color: $white;
+                border: 1px solid $gray-light;
+                &:before { color: $gray-light; }
+            }
+        }
+        &.completed {
+            &:hover {
+                cursor: pointer;
+            }
+            a.nav-link { color: $pblue-light; }
+            .step {
+                color: $pblue-light;
+                background-color: $white;
+                border: 1px solid $pblue-light;
+                &:not(.numbered)::before { 
+                    content:""; 
+                    color: $pblue;
+                    font-weight: bold;
+                    width: 6px;
+                    height: 11px;
+                    margin: 4px 8px;
+                    border-bottom: 2px solid $pblue-light;
+                    border-right: 2px solid $pblue-light;
+                    transform: rotate(45deg);
+                    display: block;
+                }
+                &.numbered{
+                    &.step1 {
+                        &:before {
+                            content: '1';
+                            color: $pblue-light;
+                        }
+                    }
+                    &.step2 {
+                        &:before { 
+                            content: '2';
+                            color: $pblue-light; 
+                        }
+                    }
+                    &.step3 {
+                        &:before {
+                            content: '3';
+                            color: $pblue-light; 
+                        }
+                    }
+                    &.step4 {
+                        &:before { 
+                            content: '4';
+                            color: $pblue-light;
+                        }
+                    }
+                }
+            }
+        }
+        &.locked {
+            a.nav-link { color: $pblue-light; }
+            .step {
+                border: 1px solid $pblue-dark;
+                background-color: $white;
+
+                &.step1,
+                &.step2 {
+                    &:before { 
+                        content: '';
+                        background-image: url('../../../assets/images/lock.svg');
+                        width: 1rem;
+                        height: 1rem;
+                        display: inline-block;
+                    }
+                }
+            }            
+        }
+        &.active {
+            border-bottom: 2px solid $pblue-dark;
+
+            &:hover {
+                cursor: text;
+            }
+
+            a.nav-link { 
+                color: $pblue-dark; 
+                font-weight: bold;
+            }
+            .step {
+                color: $white;
+                background-color: $pblue-dark;
+                border: 1px solid $pblue-dark;
+                &:before { color: $white; }
+            }
+        }
+    }
+}

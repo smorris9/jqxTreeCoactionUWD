@@ -1,6 +1,6 @@
 version: "1"
 project:
-  name: "PSI-Servicing Portals-PSOU-WebApp"
+  name: "PSI-Servicing Portals-PSOP-WebApp"
   branch: ${scm.git.branch}
   revision:
     name: ${scm.git.commit}
@@ -17,7 +17,7 @@ capture:
     javascript:
       files:
       - directory: ${project.projectDir}
-      - excludeRegex: node_modules|bower_components|vendor|___mock-data
+      - excludeRegex: node_modules|bower_components|vendor
     php:
       files:
       - directory: ${project.projectDir}

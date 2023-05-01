@@ -1,0 +1,273 @@
+@import 'base';
+
+form{
+    & button.form-button{
+        @include fontstyle($size: 0.875rem, $weight: bold, $color: $pblue-light);
+        line-height: 1.43;
+        &:hover, &:active{
+            color: $white;
+        }
+    }
+}
+.psi-request-form{    
+    & .info-helptext{
+        color: $pgray-dark;
+        font-size: 0.75rem;
+        font-weight: normal;
+        text-transform: none;
+        margin-top: -0.25rem;
+        margin-bottom: 0.5rem;
+    }
+    & .info-headertext, & .info-footertext, & .info-headertext > span{
+        font-size: 1.25rem;
+        color: $gray-darkest;
+    }
+    & .info-headertext.normal, & .info-footertext.normal, & .info-headertext.normal > span{
+        font-size: 1rem;
+        font-weight: bold;
+        color: $gray-darkest;
+    }
+    & .component.request-form{
+        &:not(:first-child){
+            padding-top: 3rem;
+        }
+        margin-bottom: 2rem;
+        textarea{
+            background-color: $white;
+            border: solid 1px $gray-light;
+            resize:none;
+        }
+        & > .box{
+            border-radius: 4px;
+            border: solid 1px $gray-light;
+            padding: 1rem;
+
+            &:not(:first-child){
+                margin-top: 2.25rem;
+            }
+        }
+
+        & .category.request-form-body{
+            & .category-section{
+                &.border-bottom{
+                    border-bottom: 1px solid $gray-light!important;
+                }
+                &:not(:first-child){
+                    margin-top: 1rem;
+                }
+                & .category-section-header{
+                    &.border-top{
+                        border-top: 1px solid $gray-light!important;
+                    }
+                    & .remove-section{
+                        font-size: 1.25rem;
+                        cursor: pointer;
+                        &:not(.float-right){
+                            display: inline-flex;
+                            padding-left: .5rem;
+                            & > img{
+                                position: absolute;
+                                top: 0.4rem;
+                            }
+                        }
+                    }
+        
+                }
+                & .category-section-body{
+                    margin-top: 1rem;
+
+                    & .info-group:not(:first-child){
+                        margin-top: 0.75rem;
+                    }
+                    
+                    & > .info-group:first-child{
+                        margin-top: 0;
+                    }
+                    & .static-value{
+                        font-size: 14px;
+                        line-height: 1.71;
+                        color: $gray-darkest;
+                    }
+                }
+
+                & .category-section-footer{
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+        & .request-form-footer{
+            margin-top: 0.75rem;
+        }
+    }
+
+    & .footer{
+        margin-bottom: 2.5rem;
+    }
+}
+
+.psi-renewal-form {
+    input, select {
+        margin-top: 0.75rem;
+    }
+
+    .section-row {
+        & .section-info{
+            width: 75%;
+            color: $pgray-dark;
+        }
+
+        & .section-border-bottom {
+            padding-bottom: 2rem;
+        }
+        &:not(:last-child) > .section-border-bottom{
+            border-bottom: 2px solid $gray-lightest;
+        }
+        &:first-child{
+            padding-top: 1rem;
+        }
+        &:not(:first-child){
+            padding-top: 2rem;
+        }
+        & .info-group{
+            &:not(:first-child){
+                &:not(.no-mt){
+                    margin-top: 1.5rem !important;
+                }
+            }
+            
+            &:first-child{
+                margin-top: 0;
+            }
+            & label > .info-helptext{
+                font-size: 0.75rem;
+                font-weight: normal;
+                text-transform: none;
+            }
+
+            & .box.psi-checkbox{
+                &.disabled {
+                    background-color: $gray-lightest;
+                    border: none;
+                    & .custom-control-label.psi-checkbox-label{
+                        color: $gray-darkest !important;
+                    }
+                }
+            }
+
+            & .input-container{
+                position: relative;
+                & input {
+                    border-radius: 4px;
+                    border: solid 1px $gray-light;
+                    background-color: $white;
+                    -moz-appearance:textfield; /* Firefox */
+                    &::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                }
+                & .percent-sign{
+                    position: absolute;
+                    right: 1rem;
+                    font-size: 0.875rem;
+                    line-height: 1.71;
+                    text-align: right;
+                    color: $gray-light;
+                    top: 0.45rem;
+                }
+            }
+
+            & input, & textarea{
+                background-color: $white;
+                border: solid 1px $gray-light;
+            }
+            & textarea{
+                resize:none;
+            }
+            & select.form-control{
+                height: 2.25rem;
+            }
+            & .info-helptext-minimum{
+                font-size: 0.75rem;
+                font-weight: normal;
+                text-transform: none;
+                color: $pgray-dark;
+            }
+            & .amount-input-container {
+                border-radius: 4px;
+                border: solid 1px $gray-light;
+                background-color: $white;
+                padding: 0 10px;
+
+                & input.psi-amountInput {
+                    border: 0;
+                    width: 95%;
+                    padding-left: 0;
+                    display: inline;
+                    
+                }
+
+                & .amt-placeholder {
+                    @include fontstyle($size: 0.875rem, $weight: normal, $color: $gray-light);
+                    line-height: 1.71;
+                    margin-right: 0.3125rem;
+                }
+            }
+        }
+        &:last-of-type {
+            border: 0;
+        }
+        &.button-row {
+            padding-bottom: 15px;
+            .btn {
+                width: 50%;
+            }
+            .successMessage, .dangerMessage {
+                @include media-breakpoint-up(lg){
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        & .col-title {
+            @include fontstyle($size: 1.25rem, $weight: bold, $color: $gray-darkest);
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    & .section-title {
+        font-size: 1.25rem;
+        color: $pgray-dark;
+    }
+
+    & .section-desc{
+        font-size: 1rem;    
+        font-weight: normal;
+        line-height: 1.5;
+        color: $pgray-dark;
+        width: 75%;
+    }
+
+    .profile-txt {
+        color: $pgray-dark;
+    }
+
+    .review-section {
+        .field-row {
+            margin-top: 0.9375rem;  //15px
+
+            &:first-of-type {
+                margin-top: 0;
+            }
+        }
+        .field-title {
+            @include fontstyle($size: 0.875rem, $weight: bold, $color: $pgray-dark);
+            line-height: 1.43;
+        }
+        .field-text {
+            @include fontstyle($size: 0.875rem, $weight: normal, $color: $gray-darkest);
+            line-height: 1.71;
+        }
+    }
+}

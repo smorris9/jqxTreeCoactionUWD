@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="84px" viewBox="0 0 88 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>calculator</title>
+    <desc>Created with Sketch.</desc>
+        <style>
+        @keyframes fadein-slowest {
+            0% { opacity: 0; }
+            80% { opacity: 0; }
+            85%   { opacity: 1; }
+            100%   { opacity: 1; }
+        }
+        @keyframes fadein-slow {
+            0% { opacity: 0; }
+            60% { opacity: 0; }
+            65%   { opacity: 1; }
+            100%   { opacity: 1; }
+        }
+        @keyframes fadein-medium {
+            0% { opacity: 0; }
+            40% { opacity: 0; }
+            45% { opacity: 1; }
+            100%   { opacity: 1; }
+        }
+        @keyframes fadein-fast {
+            0% { opacity: 0; }
+            20% { opacity: 0; }
+            25% { opacity: 1; }
+            100%   { opacity: 1; }
+        }
+
+        @keyframes keypress {
+            0% { opacity: 0; }
+            30% { opacity: 0; }
+            40% { opacity: 1; }
+            50% { opacity: 1; }
+            60% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        #dots > * {transform-origin:center 10px !important;}
+        #dot-1 {animation: fadein-fast 8s;animation-iteration-count:infinite;}
+        #dot-2 {animation: fadein-medium 8s;animation-iteration-count:infinite;}
+        #dot-3 {animation: fadein-slow 8s;animation-iteration-count:infinite;}
+        #dot-4 {animation: fadein-slowest 8s;animation-iteration-count:infinite;}
+        #keys > * {opacity:0;}
+        #key-1 {animation: keypress 3s;animation-iteration-count:infinite;}
+        #key-2 {animation: keypress 3s;animation-iteration-count:infinite;animation-delay:.5s}
+        #key-3 {animation: keypress 3s;animation-iteration-count:infinite;animation-delay:1s}
+        #key-4 {animation: keypress 3s;animation-iteration-count:infinite;animation-delay:2s}
+        #key-5 {animation: keypress 3s;animation-iteration-count:infinite;animation-delay:1.5s}
+    </style>
+    <g id="calculator" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="static" transform="translate(15.000000, 5.000000)">
+            <rect id="Rectangle" stroke="#001D53" stroke-width="3" fill="#FFFFFF" x="1.5" y="1.5" width="55" height="71" rx="4"></rect>
+            <rect id="screen" fill="#1465FF" x="7" y="7" width="44" height="18" rx="1"></rect>
+            <g id="row-1" transform="translate(7.000000, 59.000000)" fill="#A3C3FF">
+                <rect id="key" x="0" y="0" width="8" height="8" rx="1"></rect>
+                <rect id="key" x="12" y="0" width="8" height="8" rx="1"></rect>
+                <rect id="key" x="24" y="0" width="8" height="8" rx="1"></rect>
+                <rect id="key" x="36" y="0" width="8" height="8" rx="1"></rect>
+            </g>
+            <g id="row-2" transform="translate(7.000000, 47.000000)" fill="#A3C3FF">
+                <rect id="key" x="0" y="0" width="8" height="8" rx="1"></rect>
+                <rect id="key" x="12" y="0" width="8" height="8" rx="1"></rect>
+                <rect id="key" x="24" y="0" width="8" height="8" rx="1"></rect>
+                <rect id="key" x="36" y="0" width="8" height="8" rx="1"></rect>
+            </g>
+            <g id="row-3" transform="translate(7.000000, 35.000000)" fill="#A3C3FF">
+                <rect id="key" x="0" y="0" width="8" height="8" rx="1"></rect>
+                <rect id="key" x="12" y="0" width="8" height="8" rx="1"></rect>
+                <rect id="key" x="24" y="0" width="8" height="8" rx="1"></rect>
+                <rect id="key" x="36" y="0" width="8" height="8" rx="1"></rect>
+            </g>
+        </g>
+        <g id="dots" transform="translate(27.000000, 18.000000)" fill="#FFFFFF">
+            <path d="M0.5,3 C0.5,4.65685425 1.84314575,6 3.5,6 C5.15685425,6 6.5,4.65685425 6.5,3 C6.5,1.34314575 5.15685425,-3.04359188e-16 3.5,0 C1.84314575,3.04359188e-16 0.5,1.34314575 0.5,3 Z" id="dot-4"></path>
+            <path d="M9.5,3 C9.5,4.65685425 10.8431458,6 12.5,6 C14.1568542,6 15.5,4.65685425 15.5,3 C15.5,1.34314575 14.1568542,-3.04359188e-16 12.5,0 C10.8431458,3.04359188e-16 9.5,1.34314575 9.5,3 Z" id="dot-3"></path>
+            <path d="M18.5,3 C18.5,4.65685425 19.8431458,6 21.5,6 C23.1568542,6 24.5,4.65685425 24.5,3 C24.5,1.34314575 23.1568542,-3.04359188e-16 21.5,0 C19.8431458,3.04359188e-16 18.5,1.34314575 18.5,3 Z" id="dot-2"></path>
+            <path d="M27.5,3 C27.5,4.65685425 28.8431458,6 30.5,6 C32.1568542,6 33.5,4.65685425 33.5,3 C33.5,1.34314575 32.1568542,-3.04359188e-16 30.5,0 C28.8431458,3.04359188e-16 27.5,1.34314575 27.5,3 Z" id="dot-1"></path>
+        </g>
+        <g id="keys" transform="translate(22.000000, 40.000000)" fill="#1465FF">
+            <rect id="key-5" x="36" y="12" width="8" height="8" rx="1"></rect>
+            <rect id="key-4" x="24" y="24" width="8" height="8" rx="1"></rect>
+            <rect id="key-3" x="12" y="12" width="8" height="8" rx="1"></rect>
+            <rect id="key-2" x="36" y="0" width="8" height="8" rx="1"></rect>
+            <rect id="key-1" x="0" y="0" width="8" height="8" rx="1"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,19 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
-    <defs>
-        <path id="jwqk9yxpma" d="M0 0L16 0 16 16 0 16z"/>
-    </defs>
-    <g fill="none" fill-rule="evenodd">
-        <g>
-            <g>
-                <g>
-                    <g transform="translate(-627 -1918) translate(615 1624) translate(0 272) translate(12 22)">
-                        <mask id="nzruib3adb" fill="#fff">
-                            <use xlink:href="#jwqk9yxpma"/>
-                        </mask>
-                        <path fill="#0075cf" fill-rule="nonzero" d="M10.22 4.34l.154 7.514c.03 1.444-1.116 2.59-2.56 2.56-1.444-.03-2.637-1.223-2.667-2.667l-.166-8.166c-.019-.902.698-1.619 1.6-1.6.901.018 1.648.765 1.666 1.666l.14 6.86c.008.36-.28.648-.64.64-.36-.007-.66-.307-.666-.666l-.127-6.207-.98-.02.127 6.207c.018.901.765 1.648 1.666 1.666.902.019 1.619-.698 1.6-1.6l-.14-6.86c-.03-1.444-1.223-2.637-2.666-2.666C5.117.97 3.97 2.117 4 3.56l.166 8.166c.04 1.986 1.68 3.626 3.667 3.667 1.986.04 3.56-1.534 3.52-3.52L11.2 4.36l-.98-.02z" mask="url(#nzruib3adb)" transform="rotate(45 7.677 8.197)"/>
-                    </g>
-                </g>
-            </g>
-        </g>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <mask id="3eqdu2jtha" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h16v16H0V0z" fill="#fff"/>
+    </mask>
+    <g mask="url(#3eqdu2jtha)">
+        <path d="m12.203 7.269-5.204 5.42a2.488 2.488 0 0 1-3.62 0c-1.001-1.041-1.001-2.729 0-3.77l5.656-5.893a1.556 1.556 0 0 1 2.263 0c.624.65.624 1.706 0 2.357l-4.752 4.95a.624.624 0 0 1-.905 0 .689.689 0 0 1 0-.943l4.3-4.478-.68-.708-4.299 4.479a1.717 1.717 0 0 0 0 2.357c.625.65 1.638.65 2.263 0l4.752-4.95c1-1.042 1-2.73 0-3.771a2.488 2.488 0 0 0-3.62 0L2.698 8.21c-1.375 1.433-1.375 3.753 0 5.186a3.42 3.42 0 0 0 4.978 0l5.205-5.421-.68-.707z" fill="#0075CF"/>
     </g>
 </svg>

@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { jqxGridModule } from 'jqwidgets-ng/jqxgrid';
-import { jqxExpanderModule } from 'jqwidgets-ng/jqxexpander';
-import { jqxTreeModule } from 'jqwidgets-ng/jqxtree';
+import { jqxTabsModule } from 'jqwidgets-ng/jqxtabs';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -11,9 +9,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    jqxGridModule,
-    jqxExpanderModule,
-    jqxTreeModule
+    jqxTabsModule
   ],
   providers: [
     

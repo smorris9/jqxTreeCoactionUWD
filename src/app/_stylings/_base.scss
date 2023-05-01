@@ -1,0 +1,80 @@
+/* @import must be at top of file, otherwise CSS will not work */
+
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+
+// Font Variables
+$default-font: 'Avenir Next', sans-serif;
+
+// font-size
+$default-font-size: 16px;
+
+/* New Primary Colors for Rebrand - SM - 03/01/22 */
+$pblue-lighter: #e6f1fa;
+$pblue-light: #0075cf;
+$pblue: #213342;
+$pblue-dark: #00467c;
+$pgray: #919d9d;
+$pgray-light: #a2acab;
+$pgray-lighter: #BCC1C6;
+$pgray-lightest: #ebeff1;
+$pgray-dark: #3b5a75;
+
+/*** New Color Hex Codes - SG - 05/13/21 ***/
+//Primary (Blue) Colors
+$blue-lighter: #E9F0FF;
+$blue-light: #A3C3FF;
+$blue: #1465FF;
+$blue-dark: #1045AC;
+$blue-darker: #092661;
+
+//Neutral (Gray) Colors
+$gray-lightest: #F3F4F7;
+$gray-lighter: #C9CDD6;
+$gray-light: #A5AAB8;
+$gray-dark: #6F7585;
+$gray-darker: #4B505C;
+$gray-darkest: #24272E;
+
+//Warning (Yellow) Colors
+$yellow-lightest: #FFF3E0;
+$yellow: #F2A633;
+$yellow-darkest: #734E18;
+
+//Sucess (Green) Colors
+$green-lightest: #E6F9F2;
+$green: #008754;
+$green-darkest: #004A2E;
+
+//Error (Red) Colors
+$red-lightest: #FFD9E0;
+$red: #E8153F;
+$red-darkest: #800B23;
+
+//Secondary blue colors - these are new colors not currently used in PSOP - SG - 05/12/21
+$sblue: #00BFF1;
+$sblue-darkest: #0069CB;
+
+//Ascent Teal colors - these are new colors not currently used in PSOP - SG - 05/12/21
+$teal: #27EBDA;
+$teal_darkest: #097B91;
+
+$gray-text-1: #f3f4f5;
+
+@mixin fontstyle ($family : $default-font, $size: $default-font-size, $weight: normal, $color: $white) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin backgroundimage ($image : $url, $height: $ht, $weight: $wt) {
+    background-image: url($image);
+    background-repeat: no-repeat;
+    background-size: $weight $height;
+    height: $height;
+    width: $weight;
+    display: inline-block;
+    vertical-align: middle;
+}
